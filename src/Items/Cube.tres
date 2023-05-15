@@ -1,0 +1,9 @@
+[gd_resource type="Resource" load_steps=3 format=3 uid="uid://dy686yxm4dt2y"]
+
+[ext_resource type="Script" path="res://Items/Item.cs" id="1_dp2tv"]
+[ext_resource type="Texture2D" uid="uid://x31j1iwhf70e" path="res://Items/cube.png" id="2_s18sg"]
+
+[resource]
+script = ExtResource("1_dp2tv")
+name = "cube"
+texture = ExtResource("2_s18sg")

@@ -1,0 +1,18 @@
+[gd_scene load_steps=2 format=3 uid="uid://d3iiw6qab007e"]
+
+[ext_resource type="PackedScene" uid="uid://dcviffwgvwh4k" path="res://InventoryDisplay.tscn" id="1"]
+
+[node name="InventoryContainer" type="ColorRect"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+color = Color(0, 0, 0, 1)
+
+[node name="CenterContainer" type="CenterContainer" parent="."]
+layout_mode = 0
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+
+[node name="InventoryDisplay" parent="CenterContainer" instance=ExtResource("1")]
+layout_mode = 2
