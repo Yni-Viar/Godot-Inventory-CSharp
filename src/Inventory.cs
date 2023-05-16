@@ -1,7 +1,7 @@
 using Godot;
 using System;
 
-public partial class Inventory : Resource
+public partial class Inventory : Node
 {
     internal Godot.Collections.Dictionary dragData;
 

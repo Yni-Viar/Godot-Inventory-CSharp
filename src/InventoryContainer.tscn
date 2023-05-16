@@ -1,6 +1,10 @@
-[gd_scene load_steps=2 format=3 uid="uid://d3iiw6qab007e"]
+[gd_scene load_steps=6 format=3 uid="uid://d3iiw6qab007e"]
 
 [ext_resource type="PackedScene" uid="uid://dcviffwgvwh4k" path="res://InventoryDisplay.tscn" id="1"]
+[ext_resource type="Script" path="res://Inventory.cs" id="2_rjun4"]
+[ext_resource type="Resource" uid="uid://dy686yxm4dt2y" path="res://Items/Cube.tres" id="3_eaeq3"]
+[ext_resource type="Resource" uid="uid://8niog7j681ls" path="res://Items/Sphere.tres" id="4_etjlg"]
+[ext_resource type="Resource" uid="uid://cnhddnm84o2bu" path="res://Items/Triangle.tres" id="5_0slwj"]
 
 [node name="InventoryContainer" type="ColorRect"]
 anchors_preset = 15
@@ -16,3 +20,7 @@ mouse_filter = 2
 
 [node name="InventoryDisplay" parent="CenterContainer" instance=ExtResource("1")]
 layout_mode = 2
+
+[node name="Inventory" type="Node" parent="."]
+script = ExtResource("2_rjun4")
+items = [ExtResource("3_eaeq3"), null, null, null, ExtResource("4_etjlg"), null, null, null, ExtResource("5_0slwj"), null]

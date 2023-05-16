@@ -2,6 +2,5 @@
   <PropertyGroup>
     <TargetFramework>net6.0</TargetFramework>
     <EnableDynamicLoading>true</EnableDynamicLoading>
-    <RootNamespace>InventoryTutorial</RootNamespace>
   </PropertyGroup>
 </Project>

@@ -3,10 +3,11 @@ using System;
 
 public partial class InventoryDisplay : GridContainer
 {
-    Inventory inventory = ResourceLoader.Load<Inventory>("res://Inventory.tres");
+    Inventory inventory = new Inventory();
 	// Called when the node enters the scene tree for the first time.
 	public override void _Ready()
 	{
+        inventory = GetParent().GetParent().GetNode<Inventory>("Inventory");
         inventory.ItemsChanged += OnItemsChanged;
         GD.Print(inventory.items);
         UpdateInventoryDisplay();

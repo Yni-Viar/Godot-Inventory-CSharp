@@ -3,11 +3,12 @@ using System;
 
 public partial class InventorySlotDisplay : CenterContainer
 {
-    Inventory inventory = ResourceLoader.Load<Inventory>("res://Inventory.tres");
+    Inventory inventory = new Inventory();
     TextureRect itemTextureRect;
 	// Called when the node enters the scene tree for the first time.
 	public override void _Ready()
 	{
+        inventory = GetParent().GetParent().GetParent().GetNode<Inventory>("Inventory");
         itemTextureRect = GetNode<TextureRect>("ItemTextureRect");
 	}
 
