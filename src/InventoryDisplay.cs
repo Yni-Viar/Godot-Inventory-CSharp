@@ -7,6 +7,7 @@ public partial class InventoryDisplay : GridContainer
 	// Called when the node enters the scene tree for the first time.
 	public override void _Ready()
 	{
+        //The main inventory script is a node, so you need to assign inventory to a node...
         inventory = GetParent().GetParent().GetNode<Inventory>("Inventory");
         inventory.ItemsChanged += OnItemsChanged;
         GD.Print(inventory.items);

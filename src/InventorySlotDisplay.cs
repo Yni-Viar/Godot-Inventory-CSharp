@@ -8,6 +8,7 @@ public partial class InventorySlotDisplay : CenterContainer
 	// Called when the node enters the scene tree for the first time.
 	public override void _Ready()
 	{
+        //The main inventory script is a node, so you need to assign inventory to a node...
         inventory = GetParent().GetParent().GetParent().GetNode<Inventory>("Inventory");
         itemTextureRect = GetNode<TextureRect>("ItemTextureRect");
 	}
@@ -29,6 +30,7 @@ public partial class InventorySlotDisplay : CenterContainer
         }
     }
 
+    //Methods below are used for dragging items
     public override Variant _GetDragData(Vector2 atPosition)
     {
         
